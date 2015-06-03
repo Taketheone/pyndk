@@ -21,6 +21,7 @@ python 高性能,高并发，轻量级，多进程，多线程网络开发框架
             def onRead(self, session, package):
                 response = "HTTP/1.1 200 OK\r\nContent-Length: 5\r\n\r\nhello"
                 CCommMgr.getInstance().write(session,response,True);
+                
             def onConn(self, session, flag):
                 pass
                 #print 'onConn'
@@ -28,6 +29,7 @@ python 高性能,高并发，轻量级，多进程，多线程网络开发框架
             def onClose(self, session):
                 #print 'onClose'
                 pass
+                
             def onError(self, msg):
                 print ('onError')
                 
