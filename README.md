@@ -1,5 +1,5 @@
-# pyndk
-python 高性能,高并发，轻量级，多进程，多线程网络开发框架
+# pyndk 
+python 高性能,高并发，轻量级，多进程，多线程网络开发框架。适用python 2.6-2.7版本
 ===============================
         from pyndk.CCommMgr import *
         from pyndk.CRawPackageFilter import CRawPackageFilter
