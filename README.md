@@ -1,13 +1,13 @@
 # pyndk
 python 高性能,高并发，轻量级，多进程，多线程网络开发框架
 =====
+{{
 from pyndk.CCommMgr import *
 from pyndk.CH2T3PackageFilter import CH2T3PackageFilter
 from pyndk.CRawPackageFilter import CRawPackageFilter
 from pyndk.CProcessor import CProcessor
 
 class ProCenter(CProcessor):
-    
     instance = None
         
     @staticmethod
@@ -45,3 +45,4 @@ if __name__ == '__main__':
     CCommMgr.getInstance().setTimer(1, 1000, ProCenter.getInstance(), None)
     #CCommMgr.getInstance().start() single process the better performance and worst concurrency
     CCommMgr.getInstance().fork(4) #multi process the better performance and better concurrency
+}}
