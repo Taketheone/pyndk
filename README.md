@@ -1,5 +1,5 @@
 # pyndk 
-python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞网络开发框架。适用linux 下 python 2.6-2.7版本（不能用于windows，类为用了select.epoll ) 4w/qps
+python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞网络开发框架。适用linux 下 python 2.6-2.7版本（不能用于windows，因为用了select.epoll ) 4w/qps
 ===============================
         from pyndk.CCommMgr import *
         from pyndk.CRawPackageFilter import CRawPackageFilter
