@@ -51,3 +51,14 @@ python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞
             #以多进程模epoll 事件模型启动服务
             CCommMgr.getInstance().fork(4) #multi process the better performance and better concurrency
 
+==================
+        Concurrency Level:      100
+        Time taken for tests:   2.429 seconds
+        Complete requests:      100000
+        Failed requests:        0
+        Total transferred:      4300000 bytes
+        HTML transferred:       500000 bytes
+        Requests per second:    41168.41 [#/sec] (mean)
+        Time per request:       2.429 [ms] (mean)
+        Time per request:       0.024 [ms] (mean, across all concurrent requests)
+        Transfer rate:          1728.75 [Kbytes/sec] received
