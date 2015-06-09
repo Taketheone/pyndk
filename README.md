@@ -51,7 +51,7 @@ python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞
             #以多进程模epoll 事件模型启动服务
             CCommMgr.getInstance().fork(4) #multi process the better performance and better concurrency
 
-========ab测试性能==========
+# ab测试性能
         Concurrency Level:      100
         Time taken for tests:   2.429 seconds
         Complete requests:      100000
