@@ -38,7 +38,7 @@ python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞
                 CCommMgr.getInstance().setTimer(1, 1000, self, data)
                 
         if __name__ == '__main__':
-            #创建服务，监听9003端口，包过滤器为 CRawPackageFilter（用来关定包的完整性）
+            #创建服务，监听9003端口，包过滤器为 CRawPackageFilter（用来确定包的完整性）
             srvId1 = CCommMgr.getInstance().createSrv(SRV_TCP, '0.0.0.0', 9003, CRawPackageFilter())
             #初始化处理器
             ProCenter.getInstance().init()
