@@ -1,6 +1,7 @@
 # pyndk 
 python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞网络开发框架。适用linux 下 python 2.6-2.7版本（不能用于windows，因为用了select.epoll ) 4w/qps
 # 单进程，及多进程DEMO
+```
         from pyndk.CCommMgr import *
         from pyndk.CRawPackageFilter import CRawPackageFilter
         from pyndk.CProcessor import CProcessor
@@ -50,8 +51,9 @@ python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞
             #CCommMgr.getInstance().start() single process the better performance and worst concurrency
             #以多进程模epoll 事件模型启动服务
             CCommMgr.getInstance().fork(4) #multi process the better performance and better concurrency
-
+```
 # ab测试性能 100 并发
+```
         Concurrency Level:      100
         Time taken for tests:   2.429 seconds
         Complete requests:      100000
@@ -62,3 +64,4 @@ python 高性能,高并发，轻量级，多进程，多线程，异步非阻塞
         Time per request:       2.429 [ms] (mean)
         Time per request:       0.024 [ms] (mean, across all concurrent requests)
         Transfer rate:          1728.75 [Kbytes/sec] received
+ ```
